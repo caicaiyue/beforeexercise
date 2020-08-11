@@ -36,9 +36,8 @@ public class ComponentIterator implements Iterator {
 			if(mc instanceof Menu){
 				stack.push(mc.createIterator());
 				return next();
-			}else{
-				return mc;
 			}
+			   return mc;
 			
 		}else{
 			return null;
